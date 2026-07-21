@@ -1,0 +1,657 @@
+/* RESET */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",Arial,sans-serif;
+
+}
+
+
+
+body{
+
+
+   background-color:  #d4af37;
+}
+
+
+
+
+
+/* HEADER */
+
+
+header{
+
+
+    width:100%;
+    height:90px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 60px;
+
+
+    background-color:  #000000;
+
+
+    color:white;
+
+}
+
+
+
+
+.logo{
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+
+}
+
+
+.logo img{
+
+
+    width:55px;
+
+    height:55px;
+
+}
+
+
+
+
+.logo h2{
+
+
+    font-size:26px;
+
+    font-weight:900;
+
+}
+
+
+
+
+
+nav{
+
+
+    display:flex;
+
+    gap:35px;
+
+
+}
+
+
+
+
+nav a{
+
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    font-size:17px;
+
+
+}
+
+
+
+nav a:hover{
+
+
+    color:#ffd700;
+
+
+}
+
+
+
+
+
+.admin{
+
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+
+}
+
+
+
+
+.admin button{
+
+
+    width:100px;
+
+    padding:10px;
+
+
+    border:none;
+
+
+    border-radius:25px;
+
+
+    background:#ffd700;
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+/* HERO */
+
+
+#hero{
+
+
+    height:420px;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    text-align:center;
+
+
+
+
+    background-size:cover;
+
+    background-position:center;
+
+
+    color:rgb(255, 0, 0);
+
+
+}
+
+
+
+#hero h1{
+
+
+    font-size:60px;
+
+    font-weight:900;
+
+
+}
+
+
+
+#hero p{
+
+
+    font-size:22px;
+
+    margin-top:15px;
+
+}
+
+
+
+
+
+/* CONTACT AREA */
+
+
+
+#contactSection{
+
+
+    width:90%;
+
+
+    margin:60px auto;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:stretch;
+
+
+    gap:40px;
+
+
+}
+
+
+
+
+
+.contact-info,
+.form-box{
+
+
+    width:450px;
+
+
+    background:white;
+
+
+    padding:35px;
+
+
+    border-radius:25px;
+
+
+
+    box-shadow:
+
+    0px 15px 35px rgba(0,0,0,.25);
+
+
+}
+
+
+
+
+
+.contact-info img{
+
+
+    width:100%;
+
+
+    height:230px;
+
+
+    object-fit:cover;
+
+
+    border-radius:20px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+
+.contact-info p{
+
+
+    margin:18px 0;
+
+
+    font-size:17px;
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+
+h2{
+
+
+    font-size:30px;
+
+
+    color:#9b7200;
+
+
+    font-weight:900;
+
+
+    text-align:center;
+
+
+    margin-bottom:25px;
+
+
+}
+
+
+
+
+
+
+
+/* FORM */
+
+
+
+input,
+select,
+textarea{
+
+
+    width:100%;
+
+
+    padding:15px;
+
+
+    margin-bottom:15px;
+
+
+    border-radius:12px;
+
+
+    border:2px solid #d4af37;
+
+
+    outline:none;
+
+
+    font-size:15px;
+
+
+}
+
+
+
+
+
+textarea{
+
+
+    height:130px;
+
+
+    resize:none;
+
+
+}
+
+
+
+
+
+.form-box button{
+
+
+    width:100%;
+
+
+    padding:15px;
+
+
+    border:none;
+
+
+    border-radius:30px;
+
+
+    cursor:pointer;
+
+
+    background:
+
+
+    linear-gradient(
+    45deg,
+    #c99700,
+    #ffe680
+    );
+
+
+    font-size:17px;
+
+
+    font-weight:900;
+
+
+}
+
+
+
+
+.form-box button:hover{
+
+
+    transform:translateY(-3px);
+
+
+}
+
+
+
+
+
+/* MAP */
+
+
+
+#map{
+
+
+    text-align:center;
+
+
+    padding:50px;
+
+
+}
+
+
+
+
+.map-box img{
+
+
+    width:85%;
+
+
+    max-width:900px;
+
+
+    border-radius:30px;
+
+
+    margin-top:20px;
+
+
+    box-shadow:
+
+    0 15px 30px #0005;
+
+
+}
+
+
+
+
+
+
+/* SUPPORT */
+
+
+
+#support{
+
+
+    text-align:center;
+
+
+    padding:60px;
+
+
+    background:white;
+
+
+}
+
+
+
+#support p{
+
+
+    font-size:20px;
+
+    margin-top:20px;
+
+
+}
+
+
+
+
+
+/* FOOTER */
+
+
+footer{
+
+
+    background:#000;
+
+
+    color:white;
+
+
+    text-align:center;
+
+
+    padding:30px;
+
+
+}
+
+
+
+
+
+
+/* MOBILE */
+
+
+
+@media(max-width:900px){
+
+
+
+header{
+
+
+    height:auto;
+
+
+    flex-direction:column;
+
+
+    gap:25px;
+
+
+    padding:25px;
+
+
+}
+
+
+
+
+
+nav{
+
+
+    flex-direction:column;
+
+
+    gap:15px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+#hero h1{
+
+
+    font-size:38px;
+
+
+}
+
+
+
+
+
+#contactSection{
+
+
+    flex-direction:column;
+
+
+    width:90%;
+
+
+}
+
+
+
+.contact-info,
+.form-box{
+
+
+    width:100%;
+
+
+}
+
+
+
+.map-box img{
+
+
+    width:100%;
+
+
+}
+
+
+
+}

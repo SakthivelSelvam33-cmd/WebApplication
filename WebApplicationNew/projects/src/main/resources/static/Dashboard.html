@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+SAMS Dashboard
+</title>
+
+
+<link rel="stylesheet" href="dashboard.css">
+
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard">
+
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+
+<div class="logo">
+
+<h2>SAMS</h2>
+
+<p>
+Tailoring & Makeup Shop
+</p>
+
+</div>
+
+
+
+<ul>
+
+
+<li class="active">
+🏠 Dashboard
+</li>
+
+
+<li>
+✂ Tailoring
+
+<span>
++
+</span>
+
+</li>
+
+
+<li onclick="window.location.href='add-order.html'">
+    ➕ Add Order
+</li>
+
+<li  onclick="window.location.href='view-order.html'">
+📏 View Orders
+</li>
+
+
+<li  onclick="window.location.href='measurement.html'">
+📏 Measurements
+</li>
+
+<li  onclick="window.location.href='view-measurement.html'">
+📏 Measurement View Order
+</li>
+
+
+
+
+
+<li>
+MAKEUP SECTION
+
+</li>
+
+
+<li onclick="window.location.href='add-makeup-customer.html'">
+📅 ADD MACKUP CUSTOMER
+</li>
+
+<li onclick="window.location.href='view-makeup-customer.html'">
+📦 VIEW MAKEUP CUSTOMER
+</li>
+
+<li onclick="window.location.href='add-makeup-booking.html'">
+📦 ADD MACKUP BOOKING
+</li>
+
+<li onclick="window.location.href='view-makeup-booking.html'">
+📦 VIEW MACKUP BOOKING
+</li>
+
+<li onclick="window.location.href='add-makeup-service.html'">
+📦 ADD MACKUP SERVICE
+</li>
+
+<li onclick="window.location.href='view-makeup-service.html'">
+📦 VIEW MACKUP SERVICE
+</li>
+
+
+
+<li onclick="window.location.href='add-payment.html'">
+💰 Payments
+</li>
+
+
+
+
+<li onclick="window.location.href='Index.html'">
+🚪 Logout
+</li>
+
+
+</ul>
+
+
+
+</aside>
+
+
+
+
+
+<!-- MAIN CONTENT -->
+
+
+<main class="main">
+
+
+
+<!-- TOP BAR -->
+
+
+<header class="topbar">
+
+
+<div>
+
+<h2>
+Tailoring & Makeup Management System
+</h2>
+
+
+<p>
+Admin Dashboard
+</p>
+
+
+</div>
+
+
+
+<div class="profile">
+
+
+<img src="data:image/png;base64,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" alt="Admin profile photo">
+
+
+<span>
+Admin
+</span>
+
+
+</div>
+
+
+</header>
+
+
+
+
+
+<!-- WELCOME -->
+
+
+<div class="main-content">
+
+    <h1>
+        Welcome back, Admin 👋
+    </h1>
+
+    <p>
+        Here's what's happening with your business today
+    </p>
+
+
+    
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+
+
+
+</div>
+
+
+
+<script src="Dashboard.js"></script>
+
+
+</body>
+
+</html>

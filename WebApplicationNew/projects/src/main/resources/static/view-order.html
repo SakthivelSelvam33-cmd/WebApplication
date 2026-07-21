@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>
+View Orders
+</title>
+
+
+<link rel="stylesheet" href="view-order.css">
+
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<header class="header">
+
+
+<h1>
+Tailoring Orders
+</h1>
+
+
+<button onclick="history.back()">
+Back Dashboard
+</button>
+
+
+</header>
+
+
+
+
+<div class="search-box">
+
+<input 
+type="text"
+id="search"
+placeholder="Search Customer">
+
+
+<button onclick="searchOrder()">
+Search
+</button>
+
+
+</div>
+
+
+
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Customer</th>
+
+<th>Dress</th>
+
+<th>Amount</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody id="orderList">
+
+
+</tbody>
+
+
+</table>
+
+
+
+
+
+<!-- UPDATE POPUP -->
+
+
+<div class="modal" id="editBox">
+
+
+<div class="modal-content">
+
+
+<h2>
+Update Order
+</h2>
+
+
+<input id="editId" hidden>
+
+
+
+<input 
+id="editName"
+placeholder="Customer Name">
+
+
+
+<input 
+id="editDress"
+placeholder="Dress Type">
+
+
+
+<input 
+id="editAmount"
+placeholder="Amount">
+
+
+
+<select id="editStatus">
+
+
+<option>
+Pending
+</option>
+
+
+<option>
+Processing
+</option>
+
+
+<option>
+Completed
+</option>
+
+
+<option>
+Delivered
+</option>
+
+
+</select>
+
+
+
+<button onclick="updateOrder()">
+
+Update
+
+</button>
+
+
+<button onclick="closeEdit()">
+
+Cancel
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+<script src="view-order.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+
+<title>
+View Makeup Services
+</title>
+
+
+<link rel="stylesheet"
+href="view-makeup-service.css">
+
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="container">
+
+
+
+<header>
+
+
+<h1>
+Makeup Service Details
+</h1>
+
+
+
+<button onclick="history.back()">
+
+Back
+
+</button>
+
+
+</header>
+
+
+
+
+
+
+
+<table>
+
+
+<thead>
+
+
+<tr>
+
+
+<th>ID</th>
+
+<th>Service Name</th>
+
+<th>Description</th>
+
+<th>Price</th>
+
+<th>Action</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody id="serviceList">
+
+
+</tbody>
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+<!-- UPDATE POPUP -->
+
+
+<div class="modal" id="editBox">
+
+
+
+<div class="modal-content">
+
+
+
+<h2>
+Update Service
+</h2>
+
+
+
+
+<input id="editId" hidden>
+
+
+
+
+
+<input id="editName"
+placeholder="Service Name">
+
+
+
+
+
+<textarea id="editDescription"
+placeholder="Description">
+
+</textarea>
+
+
+
+
+
+
+<input id="editPrice"
+placeholder="Price">
+
+
+
+
+
+
+<button onclick="updateService()">
+
+Update
+
+</button>
+
+
+
+
+
+
+<button onclick="closeEdit()">
+
+Cancel
+
+</button>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<script src="view-makeup-service.js"></script>
+
+
+
+</body>
+
+</html>

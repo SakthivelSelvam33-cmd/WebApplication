@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>
+View Makeup Customers
+</title>
+
+
+<link rel="stylesheet"
+href="view-makeup-customer.css">
+
+
+</head>
+
+
+
+<body>
+
+
+<div class="container">
+
+
+
+<header>
+
+
+<h1>
+Makeup Customer Details
+</h1>
+
+
+
+<button onclick="window.location.href='Dashboard.html'">
+
+Back
+
+</button>
+
+
+</header>
+
+
+
+
+
+<div class="search">
+
+
+<input
+type="text"
+id="search"
+placeholder="Search Customer Name">
+
+
+<button onclick="searchCustomer()">
+
+Search
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+<table>
+
+
+
+<thead>
+
+
+<tr>
+
+
+<th>ID</th>
+
+<th>Name</th>
+
+<th>Phone</th>
+
+<th>Email</th>
+
+<th>Address</th>
+
+<th>Action</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+
+<tbody id="customerList">
+
+
+</tbody>
+
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+<!-- UPDATE POPUP -->
+
+
+<div class="modal" id="editBox">
+
+
+
+<div class="modal-content">
+
+
+<h2>
+Update Customer
+</h2>
+
+
+
+
+<input id="editId" hidden>
+
+
+
+<input id="editName"
+placeholder="Name">
+
+
+
+<input id="editPhone"
+placeholder="Phone">
+
+
+
+<input id="editEmail"
+placeholder="Email">
+
+
+
+<textarea id="editAddress"
+placeholder="Address">
+</textarea>
+
+
+
+
+
+<button onclick="updateCustomer()">
+
+Update
+
+</button>
+
+
+
+
+<button onclick="closeEdit()">
+
+Cancel
+
+</button>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<script src="view-makeup-customer.js"></script>
+
+
+</body>
+
+
+</html>

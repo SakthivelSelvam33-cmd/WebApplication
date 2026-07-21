@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+Add Tailoring Order
+</title>
+
+
+<link rel="stylesheet" href="add-order.css">
+
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<!-- HEADER -->
+
+<header class="header">
+
+
+<div>
+
+<h1>
+Create New Tailoring Order
+</h1>
+
+<p>
+Manage customer stitching orders professionally
+</p>
+
+</div>
+
+
+<button onclick="window.location.href='Dashboard.html'">
+    Back Dashboard
+</button>
+
+
+</header>
+
+
+
+
+
+<!-- FORM -->
+
+<form id="orderForm">
+
+
+
+<!-- CUSTOMER SECTION -->
+
+
+<section class="box">
+
+
+<h2>
+Customer Information
+</h2>
+
+
+<div class="grid">
+
+
+<div class="input-group">
+
+<label>
+Customer Name
+</label>
+
+<input 
+type="text"
+id="customerName"
+name="customerName"
+placeholder="Search Customer Name"
+list="customers"
+autocomplete="name"
+required>
+
+
+<datalist id="customers">
+
+<option value="Sakthi">
+<option value="Kumar">
+<option value="Priya">
+<option value="Anitha">
+
+</datalist>
+
+
+</div>
+
+
+
+
+
+<div class="input-group">
+
+
+<label>
+Phone Number
+</label>
+
+
+<input 
+type="tel"
+id="phone"
+name="phone"
+placeholder="Enter Phone Number"
+autocomplete="tel"
+maxlength="10"
+required>
+
+
+</div>
+
+
+
+<div class="input-group">
+
+
+<label>
+Email
+</label>
+
+
+<input
+type="email"
+id="email"
+name="email"
+placeholder="Customer Email"
+autocomplete="email">
+
+
+</div>
+
+
+
+<div class="input-group">
+
+
+<label>
+Gender
+</label>
+
+
+<select id="gender">
+
+
+<option>
+Select
+</option>
+
+<option>
+Male
+</option>
+
+
+<option>
+Female
+</option>
+
+
+</select>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ORDER DETAILS -->
+
+
+<section class="box">
+
+
+<h2>
+Order Details
+</h2>
+
+
+<div class="grid">
+
+
+<div class="input-group">
+
+
+<label>
+Category
+</label>
+
+
+<select id="category">
+
+
+<option>
+Select Category
+</option>
+
+
+<option>
+Men Wear
+</option>
+
+
+<option>
+Women Wear
+</option>
+
+
+<option>
+Kids Wear
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+
+<div class="input-group">
+
+
+<label>
+Dress Type
+</label>
+
+
+<input
+type="text"
+id="dressType"
+placeholder="Eg: Shirt, Saree Blouse"
+autocomplete="off"
+required>
+
+
+</div>
+
+
+
+
+
+
+<div class="input-group">
+
+
+<label>
+Order Date
+</label>
+
+
+<input
+type="date"
+id="orderDate">
+
+
+</div>
+
+
+
+
+
+
+<div class="input-group">
+
+
+<label>
+Delivery Date
+</label>
+
+
+<input
+type="date"
+id="deliveryDate">
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- MEASUREMENT -->
+
+
+<section class="box">
+
+
+<h2>
+Measurement Details
+</h2>
+
+
+
+<div class="grid">
+
+
+<div class="input-group">
+
+<label>
+Chest
+</label>
+
+<input type="number"
+placeholder="cm">
+
+</div>
+
+
+
+<div class="input-group">
+
+<label>
+Waist
+</label>
+
+<input type="number"
+placeholder="cm">
+
+</div>
+
+
+
+<div class="input-group">
+
+<label>
+Shoulder
+</label>
+
+<input type="number"
+placeholder="cm">
+
+</div>
+
+
+
+<div class="input-group">
+
+<label>
+Sleeve Length
+</label>
+
+<input type="number"
+placeholder="cm">
+
+</div>
+
+
+
+<div class="input-group">
+
+<label>
+Hip
+</label>
+
+<input type="number"
+placeholder="cm">
+
+</div>
+
+
+
+<div class="input-group">
+
+<label>
+Full Length
+</label>
+
+<input type="number"
+placeholder="cm">
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- PAYMENT -->
+
+
+<section class="box">
+
+
+<h2>
+Payment Details
+</h2>
+
+
+<div class="grid">
+
+
+<div class="input-group">
+
+
+<label>
+Total Amount
+</label>
+
+
+<input
+type="number"
+id="totalAmount"
+placeholder="₹"
+onkeyup="calculateBalance()">
+
+
+</div>
+
+
+
+
+<div class="input-group">
+
+
+<label>
+Advance Amount
+</label>
+
+
+<input
+type="number"
+id="advanceAmount"
+placeholder="₹"
+onkeyup="calculateBalance()">
+
+
+
+</div>
+
+
+
+
+
+
+<div class="input-group">
+
+
+<label>
+Balance Amount
+</label>
+
+
+<input
+type="number"
+id="balanceAmount"
+readonly>
+
+
+</div>
+
+
+
+
+
+
+<div class="input-group">
+
+
+<label>
+Payment Mode
+</label>
+
+
+<select>
+
+
+<option>
+Cash
+</option>
+
+
+<option>
+UPI
+</option>
+
+
+<option>
+Card
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- STATUS -->
+
+
+<section class="box">
+
+
+<h2>
+Order Status
+</h2>
+
+
+
+<select id="status">
+
+
+<option>
+Pending
+</option>
+
+
+<option>
+Processing
+</option>
+
+
+<option>
+Completed
+</option>
+
+
+<option>
+Delivered
+</option>
+
+
+</select>
+
+
+
+</section>
+
+
+
+
+
+
+
+<button class="save-btn"
+type="submit">
+
+Save Order
+
+</button>
+
+
+
+</form>
+
+
+
+</div>
+
+
+
+<script src="add-order.js"></script>
+
+
+</body>
+
+</html>

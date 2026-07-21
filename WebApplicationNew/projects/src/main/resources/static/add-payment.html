@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+<title>
+Payment
+</title>
+
+
+<link rel="stylesheet"
+href="add-payment.css">
+
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+
+<h1>
+Payment Details
+</h1>
+
+
+
+
+
+<div class="details">
+
+
+<p>
+Booking ID :
+<span id="bookingId"></span>
+</p>
+
+
+<p>
+Customer :
+<span id="customerName"></span>
+</p>
+
+
+
+<p>
+Service :
+<span id="serviceName"></span>
+</p>
+
+
+
+<p>
+Total Amount :
+<span id="totalAmount"></span>
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+<form id="paymentForm">
+
+
+
+<input id="paidAmount"
+type="number"
+placeholder="Paid Amount"
+required>
+
+
+
+<input id="balanceAmount"
+type="number"
+placeholder="Balance"
+readonly>
+
+
+
+
+
+<select id="paymentMethod">
+
+
+<option>
+Cash
+</option>
+
+
+<option>
+UPI
+</option>
+
+
+<option>
+Card
+</option>
+
+
+</select>
+
+
+
+
+
+
+
+<select id="paymentStatus">
+
+
+<option>
+Pending
+</option>
+
+
+<option>
+Partial
+</option>
+
+
+<option>
+Paid
+</option>
+
+
+</select>
+
+
+
+
+
+
+
+<button>
+
+Save Payment
+
+</button>
+
+
+
+</form>
+
+
+
+
+
+</div>
+
+
+
+
+<script src="add-payment.js"></script>
+
+
+</body>
+
+</html>

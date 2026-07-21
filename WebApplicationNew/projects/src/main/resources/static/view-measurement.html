@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>
+View Measurements
+</title>
+
+
+<link rel="stylesheet" href="view-measurement.css">
+
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+
+<header class="header">
+
+
+<h1>
+Measurement Details
+</h1>
+
+
+<button onclick="window.location.href='Dashboard.html'">
+
+Back Dashboard
+
+</button>
+
+
+</header>
+
+
+
+
+
+<div class="search-box">
+
+
+<input 
+type="text"
+id="search"
+placeholder="Search Order ID">
+
+
+
+<button onclick="searchMeasurement()">
+
+Search
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+<table>
+
+
+<thead>
+
+
+<tr>
+
+<th>ID</th>
+
+<th>Order ID</th>
+
+<th>Chest</th>
+
+<th>Waist</th>
+
+<th>Shoulder</th>
+
+<th>Sleeve</th>
+
+<th>Hip</th>
+
+<th>Action</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody id="measurementList">
+
+
+</tbody>
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+<!-- UPDATE POPUP -->
+
+
+<div class="modal" id="editBox">
+
+
+<div class="modal-content">
+
+
+
+<h2>
+
+Update Measurement
+
+</h2>
+
+
+
+<input id="editId" hidden>
+
+
+
+<input id="editChest"
+placeholder="Chest">
+
+
+
+<input id="editWaist"
+placeholder="Waist">
+
+
+
+<input id="editShoulder"
+placeholder="Shoulder">
+
+
+
+<input id="editSleeve"
+placeholder="Sleeve">
+
+
+
+<input id="editHip"
+placeholder="Hip">
+
+
+
+<input id="editNeck"
+placeholder="Neck">
+
+
+
+<input id="editLength"
+placeholder="Length">
+
+
+
+
+
+
+<button onclick="updateMeasurement()">
+
+Update
+
+</button>
+
+
+
+
+<button onclick="closeEdit()">
+
+Cancel
+
+</button>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<script src="view-measurement.js"></script>
+
+
+</body>
+
+</html>
